@@ -50,10 +50,6 @@ resource "null_resource" "ansible_run" {
         EOT
    }
 
-#   provisioner "remote-exec" {
-#      inline = ["cd cp-demo && ./scripts/start.sh"]
-#   }
-
    connection {
       type = "ssh"
       private_key = "${file(var.private_key)}"
