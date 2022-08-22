@@ -68,9 +68,4 @@
         dest: /usr/local/bin/docker-compose
         mode: 'u+x,g+x,o+x'
  
-    - name: Checkout cp-demo
-      ansible.builtin.git:
-        repo: "https://github.com/confluentinc/cp-demo.git"
-        dest: "/home/ubuntu/cp-demo"
-        version: "7.1.0-post"
 
